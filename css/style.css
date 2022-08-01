@@ -1000,11 +1000,38 @@ width: 18px;
 }
 
 
+/* forms */
+textarea{
+resize: none;}
+
+.icon-form{
+height: 24px;
+width: 24px;
+margin-left: 10px;
+}
+
+.footer-form{
+display: flex;
+margin-left: 93px;
+width: 570px;
+}
 
 
 
+.btn-footer{
+    padding: 10px 29px;
+    margin-left: 12px;
+    width: 200px;
+    height: 50px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    background-color: var(--accent-color);
+    color: rgba(255, 255, 255, 1);
+}
 
 
+/* modal forms */
 
 
 
