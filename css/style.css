@@ -274,6 +274,8 @@ text-transform: uppercase;
 .button{cursor: pointer;}
 .hero-button.primary{cursor: pointer;}
 .button-close{cursor: pointer;}
+.btn-footer{cursor: pointer;}
+.button-submit{cursor: pointer;}
 
 .hero-button{
 display:inline-block;
@@ -1000,25 +1002,55 @@ width: 18px;
 }
 
 
-/* forms */
-textarea{
-resize: none;}
-
-.icon-form{
-height: 24px;
-width: 24px;
-margin-left: 10px;
+/* forms footer */
+/* добавление отступа в первую колонку */
+.adress-info{
+flex-grow: 1;
 }
 
+
 .footer-form{
-display: flex;
 margin-left: 93px;
 width: 570px;
 }
 
+/* редактирование поисковой строки */
+.form-input{
+display: flex;
+height: 50px;
+width: 358px;
+font-style: normal;
+font-size: 16px;
+line-height: 1.25;
+color: rgba(255, 255, 255, 0.6);
+border: 1px solid rgba(255, 255, 255, 0.3);
+border-radius: 4px;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+background-color: rgba(47, 48, 58, 1);
+padding-left: 16px;
+align-items: center;
+}
 
+
+/* div на поисковую строку + кнопка */
+.sign{
+display: flex;
+}
+
+
+
+/* кнопка в футере */
 
 .btn-footer{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
     padding: 10px 29px;
     margin-left: 12px;
     width: 200px;
@@ -1030,8 +1062,70 @@ width: 570px;
     color: rgba(255, 255, 255, 1);
 }
 
+/* иконка в футере */
+.icon-form {
+height: 24px;
+width: 24px;
+margin-left: 10px;
+}
+
+
+
+/* форма в модальном окне */
 
 /* modal forms */
+
+/* запрет на увеличение радела комментарии */
+textarea {
+resize: none;
+}
+
+.form-modal{
+width: 448px;
+margin-left: auto;
+margin-right: auto;
+padding: 40px;
+outline: 1px solid tomato;
+}
+
+
+/* name form */
+.title-modal {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+
+    margin-bottom: 30px;
+}
+
+.form-field{
+    display: flex;
+    flex-direction: column;
+    outline: 1px solid blue;
+    
+}
+
+.form-field input{
+    padding: 0;
+    margin: 0;
+}
+
+.form-field:not(:last-child){
+margin-bottom: 28px;
+}
+
+
+
+
+
+
+
+
+
 
 
 

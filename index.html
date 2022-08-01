@@ -467,11 +467,18 @@
             </ul>
           </div>
 
-          <div class="footer-form">
-            <form>
-              <h2 class="footer-title">Подпишитесь на рассылку</h2>
-              <label for="mail"> </label>
-              <input type="email" name="mail" id="mail" placeholder="E-mail" />
+          <form class="footer-form">
+            <h2 class="footer-title">Подпишитесь на рассылку</h2>
+
+            <div class="sign">
+              <label for="first-mail" class="form-lable"> </label>
+              <input
+                class="form-input"
+                type="email"
+                name="mail"
+                id="first-mail"
+                placeholder="E-mail"
+              />
 
               <button class="btn-footer" type="submit">
                 Подписаться
@@ -479,17 +486,20 @@
                   <use href="./images/icons.svg#icon-icon-send"></use>
                 </svg>
               </button>
-            </form>
-          </div>
+            </div>
+          </form>
         </div>
       </div>
     </footer>
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <form autocomplete="off">
+        <form class="form-modal" autocomplete="off">
+          <h2 class="title-modal">Оставьте свои данные, мы вам перезвоним</h2>
+
           <div class="form-field">
-            <label for="">Имя</label>
+            <label for="name">Имя</label>
+
             <input type="text" name="name" id="name" />
           </div>
 
@@ -514,14 +524,10 @@
             ></textarea>
           </div>
 
-          <br />
+          <input type="checkbox" name="policy" id="policy" />
+          <label for="policy">Соглашаюсь с рассылкой и принимаю Условия договора</label>
 
-          <div class="form-field">
-            <input type="checkbox" name="policy" id="policy" />
-            <label for="policy">Соглашаюсь с рассылкой и принимаю Условия договора</label>
-          </div>
-
-          <button type="submit">Отправить</button>
+          <button class="button-submit" type="submit">Отправить</button>
         </form>
 
         <button type="button" class="button-close" data-modal-close>
