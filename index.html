@@ -467,26 +467,18 @@
             </ul>
           </div>
 
-          <form class="footer-form">
-            <h2 class="footer-title">Подпишитесь на рассылку</h2>
+          <form class="footer-form" autocomplete="off">
+            <label class="footer-field">
+              Подпишитесь на рассылку
+              <input type="email" name="mail" placeholder="E-mail" />
+            </label>
 
-            <div class="sign">
-              <label for="first-mail" class="form-lable"> </label>
-              <input
-                class="sign-input"
-                type="email"
-                name="mail"
-                id="first-mail"
-                placeholder="E-mail"
-              />
-
-              <button class="btn-footer" type="submit">
-                Подписаться
-                <svg class="icon-form">
-                  <use href="./images/icons.svg#icon-icon-send"></use>
-                </svg>
-              </button>
-            </div>
+            <button class="btn-footer" type="submit">
+              Подписаться
+              <svg class="icon-form">
+                <use href="./images/icons.svg#icon-icon-send"></use>
+              </svg>
+            </button>
           </form>
         </div>
       </div>
@@ -494,7 +486,7 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <form class="form-feedback" autocomplete="off">
+        <form class="form-modal" autocomplete="off">
           <h2 class="title-modal">Оставьте свои данные, мы вам перезвоним</h2>
 
           <label class="form-field">

@@ -1011,59 +1011,67 @@ flex-grow: 1;
 
 
 .footer-form{
+display: flex;
 margin-left: 93px;
-width: 570px;
+align-items: flex-end;
+justify-content: flex-start;
 }
 
-/* редактирование поисковой строки */
-.sign-input{
-display: flex;
-height: 50px;
+.footer-form .footer-field{
+width: min-content;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+text-transform: uppercase;
+color: var(--primery-white-color);
+}
+
+.footer-form input {
+margin-top: 20px;
+padding-left: 16px;
+padding-right: 16px;
 width: 358px;
-font-style: normal;
+height: 50px;
+background-color: transparent;
+color: var(--primery-white-color);
 font-size: 16px;
 line-height: 1.25;
-color: rgba(255, 255, 255, 0.6);
 border: 1px solid rgba(255, 255, 255, 0.3);
-border-radius: 4px;
 filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-background-color: rgba(47, 48, 58, 1);
-padding-left: 16px;
-align-items: center;
+border-radius: 4px;
 }
-
-
-/* div на поисковую строку + кнопка */
-.sign{
-display: flex;
+.footer-form input::placeholder {
+color: rgba(255, 255, 255, 0.6);
+font-size: 16px;
+line-height: 1.25;
 }
 
 
 
 /* кнопка в футере */
-
+ 
 .btn-footer{
-    display: flex;
-    align-items: center;
-    text-align: center;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.06em;
-    color: #FFFFFF;
-    padding: 10px 29px;
-    margin-left: 12px;
-    width: 200px;
-    height: 50px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    border: none;
-    background-color: var(--accent-color);
-    color: rgba(255, 255, 255, 1);
-}
+display: flex;
+align-items: center;
+text-align: center;
+font-weight: 700;
+font-size: 16px;
+line-height: 1.88;
+letter-spacing: 0.06em;
+color: #FFFFFF;
+padding: 10px 29px;
+margin-left: 12px;
+width: 200px;
+height: 50px;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+border: none;
+background-color: var(--accent-color);
+color: rgba(255, 255, 255, 1);
+} 
 
-/* иконка в футере */
+/*иконка в футере */
+
 .icon-form {
 height: 24px;
 width: 24px;
@@ -1074,49 +1082,36 @@ margin-left: 10px;
 
 /* форма в модальном окне */
 
-/* modal forms */
-
-/* запрет на увеличение радела комментарии */
-textarea {
-resize: none;
-}
 .form{
 display: block;
 margin-top: 0px;
 }
-/* .form-feedback{
-width: 448px;
-margin-left: auto;
-margin-right: auto;
-padding: 40px;
-outline: 1px solid tomato;
-} */
-
 
 /* name form */
 .title-modal {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.15;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--title-text-color);
-    margin-bottom: 12px;
+font-weight: 700;
+font-size: 20px;
+line-height: 1.15;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--title-text-color);
+margin-bottom: 12px;
 }
 
 .form-field {
-    position: relative;
-    display: block;
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.01em;
-    color: var(--primery-text-color);
+position: relative;
+display: block;
+font-size: 12px;
+line-height: 1.17;
+letter-spacing: 0.01em;
+color: var(--primery-text-color);
 }
 
 
-.form-feedback .form-field:not(.form-feedback .form-field.checkbox, .form-feedback .form-field.textarea) {
- margin-bottom: 10px;
+.form-modal .form-field:not(.form-modal .form-field.checkbox, .form-modal .form-field.textarea) {
+margin-bottom: 10px;
 }
+
 .form-field.textarea {
 margin-bottom: 20px;
 }
@@ -1222,10 +1217,10 @@ color: #2196f3 ;
 }
 
 
-.form-feedback .button-submit{
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+.form-modal .button-submit{
+display: block;
+margin-left: auto;
+margin-right: auto;
 }
 
 .button-submit{
@@ -1248,53 +1243,6 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
 border: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-/* .form-field{
-    display: flex;
-    flex-direction: column;
-    outline: 1px solid blue;
-    
-}
-
-.form-field input{
-    padding: 0;
-    margin: 0;
-}
-
-.form-field:not(:last-child){
-margin-bottom: 28px;
-}
-
-.button-submit{
-display: flex;
-align-items: center;
-justify-content: center;
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 1.88;
-letter-spacing: 0.06em;
-color: #FFFFFF;
-margin-left: auto;
-margin-right: auto;
-margin-top: 30px;
-width: 200px;
-background-color: #2196F3;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-border-radius: 4px;
-
-} */
-
 
 
 
