@@ -1206,8 +1206,8 @@ line-height: 1.7;
 }
 
 .icon-check {
-/* background-size: contain;
-background-origin: border-box; */
+background-size: contain;
+background-origin: border-box;
 margin-right: 7px;
 fill: white;
 border: 2px solid var(--title-text-color);
