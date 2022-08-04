@@ -1177,7 +1177,7 @@ line-height: 1.17;
 letter-spacing: 0.01em;
 color: rgba(117, 117, 117, 0.5);
 }
-.policy-checkbox {
+/* .policy-checkbox {
 position: absolute;
 white-space: nowrap;
 width: 1px;
@@ -1188,7 +1188,12 @@ padding: 0px;
 clip: rect(0 0 0 0);
 clip-path: inset(50%);
 margin: -1px;
+} */
+.policy-checkbox{
+position: absolute;
+appearance: none;
 }
+
 .form .form-field.checkbox {
 margin-bottom: 0px;
 }
